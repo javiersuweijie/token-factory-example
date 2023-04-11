@@ -5,8 +5,7 @@ use cw0::parse_instantiate_response_data;
 use cw2::set_contract_version;
 
 use crate::error::ContractError;
-use crate::msg::{CosmosExecuteMsg, CountResponse, CustomExecuteMsg, DenomUnit, ExecuteMsg, InstantiateMsg, Metadata, QueryMsg, TokenExecuteMsg};
-use crate::msg::CosmosExecuteMsg::Custom;
+use crate::msg::{ CountResponse, CustomExecuteMsg, DenomUnit, ExecuteMsg, InstantiateMsg, Metadata, QueryMsg, TokenExecuteMsg};
 
 // version info for migration info
 const CONTRACT_NAME: &str = "crates.io:token-factory-example";

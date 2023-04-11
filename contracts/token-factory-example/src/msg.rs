@@ -36,12 +36,6 @@ pub struct CountResponse {
 
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
 #[serde(rename_all = "snake_case")]
-pub enum CosmosExecuteMsg {
-    Custom(CustomExecuteMsg)
-}
-
-#[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
-#[serde(rename_all = "snake_case")]
 pub enum CustomExecuteMsg {
     Token(TokenExecuteMsg)
 }
